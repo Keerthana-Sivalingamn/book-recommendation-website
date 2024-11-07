@@ -1,0 +1,75 @@
+.popular-books-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    background-color: #49d0ef; /* Light background color */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the container */
+}
+
+.popular-books-container h2 {
+    font-size: 2.5em; /* Increased font size */
+    color: #333;
+    margin-bottom: 30px; /* Increased margin */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px; /* Added letter spacing */
+}
+
+.books-grid {
+    display: grid; /* Use grid layout for side-by-side alignment */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 10px;
+}
+
+.book-card {
+    background-color: #fff; /* White background for book cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.book-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd; /* Thicker border */
+}
+
+.book-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+    padding: 10px;
+    background-color: #f8f8f8; /* Light gray background for titles */
+    border-top: 1px solid #ddd;
+    text-transform: capitalize;
+    font-weight: bold; /* Bold title */
+}
+
+.book-author,
+.book-description,
+.book-category {
+    font-size: 0.9em; /* Smaller font size for author, description, and category */
+    color: #666; /* A softer color for the text */
+    margin: 5px 0; /* Margin for spacing */
+    padding: 0 10px; /* Add padding for a better look */
+}
+
+/* Additional styles for specific elements */
+.book-description {
+    font-style: italic; /* Italic style for descriptions */
+}
+
+.book-category {
+    font-weight: bold; /* Bold category for emphasis */
+    color: #333; /* Darker color for the category */
+}

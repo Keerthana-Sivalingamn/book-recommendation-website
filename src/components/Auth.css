@@ -1,0 +1,66 @@
+/* Auth.css */
+
+.auth-container {
+    max-width: 400px; /* Limit the width of the container */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    background: linear-gradient(135deg, #4067f5, #1e90ff); /* Gradient background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.auth-title {
+    text-align: center; /* Center the title */
+    color: #2c3e50; /* Dark color for the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.auth-form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Vertical layout */
+}
+
+.auth-input {
+    padding: 10px; /* Padding inside the input */
+    margin-bottom: 15px; /* Space below each input */
+    border: 1px solid #5348ea; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size */
+}
+
+.auth-button {
+    padding: 10px; /* Padding inside the button */
+    background-color: #3498db; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.auth-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.auth-message {
+    text-align: center; /* Center the message */
+    color: #e74c3c; /* Red color for error messages */
+    margin-top: 10px; /* Space above the message */
+}
+
+.signup-prompt {
+    text-align: center; /* Center the signup prompt */
+    margin-top: 15px; /* Space above the prompt */
+    color: #ef400b; /* Darker text color */
+}
+
+.signup-link {
+    color: #090000; /* Blue color for the link */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: underline; /* Underline to indicate a link */
+}
+
+.signup-link:hover {
+    color: #2980b9; /* Darker blue on hover */
+}

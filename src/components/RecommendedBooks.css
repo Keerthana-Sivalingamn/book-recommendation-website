@@ -1,0 +1,143 @@
+.recommended-books {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.recommended-books h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.recommended-books ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recommended-books li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Three books per row */
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add background color transition */
+}
+
+/* Hover effect for the list item, without affecting the image */
+.recommended-books li:hover {
+    transform: scale(1.05); /* Slightly enlarge the book item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Larger shadow */
+    background-color: #44ea67; /* Change the background color when hovering */
+}
+
+/* Optional: Add a 'selected' color change for toggling */
+.recommended-books li.selected {
+    background-color: #dcdcdc; /* Change the background color when the item is selected */
+}
+
+.recommended-books li h3 {
+    font-size: 18px;
+    color: #45e5f1;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.recommended-books li p {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.recommended-books .author {
+    font-weight: bold;
+}
+
+.recommended-books .description {
+    font-style: italic;
+}
+
+.recommended-books .book-image {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Blinking animation - kept for the li item but not for the image */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.skeleton-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid #2a3baa;
+    border-radius: 5px;
+}
+
+.skeleton-title,
+.skeleton-author,
+.skeleton-image {
+    background-color: #3cbee6;
+    border-radius: 5px;
+    animation: shimmer 1.5s infinite linear;
+}
+
+.skeleton-title {
+    width: 60%;
+    height: 20px;
+}
+
+.skeleton-author {
+    width: 40%;
+    height: 16px;
+}
+
+.skeleton-image {
+    width: 150px;
+    height: 220px;
+    margin-top: 10px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: 200px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .recommended-books li {
+        width: calc(50% - 20px); /* Two books per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .recommended-books li {
+        width: 100%; /* One book per row on small screens */
+    }
+}

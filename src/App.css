@@ -1,0 +1,30 @@
+/* App.css */
+
+/* Navbar styles */
+.navbar {
+  background-color: #db7a34; /* Navbar background color */
+  padding: 10px; /* Space around items */
+}
+
+.nav-links {
+  list-style-type: none; /* Remove bullet points */
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center items */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+  margin: 0 15px; /* Space between links */
+}
+
+.nav-links a {
+  color: white; /* Link text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2em; /* Increase font size */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-links a:hover {
+  color: #2980b9; /* Change color on hover */
+}
